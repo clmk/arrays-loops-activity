@@ -1,3 +1,4 @@
+console.log('Hello World');
 /**
  * #1 Hobbies
  * ----------
@@ -7,8 +8,10 @@
  *    hobbies
  */
 let groupHobbies = ['swimming','board games','painting'];
-console.log('Total Hobbies:', groupHobbies);
-console.log('Number of Hobbies:',groupHobbies.length);
+
+for (let i = 0; i < groupHobbies.length; i++){
+    console.log(groupHobbies[i]);
+}
 
 // Example output
 // 1. swimming
@@ -16,52 +19,52 @@ console.log('Number of Hobbies:',groupHobbies.length);
 // 3. painting
 // Total hobbies: 3
 
-/**
- * #2 Colors
- * ---------
- * 1. Create an array of colors as strings
- *    (include the color 'teal' at least once)
- * 2. Create a variable tealCount
- * 3. Write a loop that counts the number of times teal 
- *    is in the array
- * 4. Output the array and number of times teal was found
- */
-let colors = ['green','red','teal', 'orange','teal'];
-let tealCount = 0;
-//   start at 0 --tells where to end --tells how to get to end
-for (let i = 0; colors.length; i++){
-    if (colors[i] === 'teal'){
-        tealCount += 1;
-        console.log('Teal was found')
-    }
-}
-console.log('tealCount', tealCount);
-// Example output
-// green, red, teal, orange, teal
-// Teal was found 2 times
+// /**
+//  * #2 Colors
+//  * ---------
+//  * 1. Create an array of colors as strings
+//  *    (include the color 'teal' at least once)
+//  * 2. Create a variable tealCount
+//  * 3. Write a loop that counts the number of times teal 
+//  *    is in the array
+//  * 4. Output the array and number of times teal was found
+//  */
+// let colors = ['green','red','teal', 'orange','teal'];
+// let tealCount = 0;
+// //   start at 0 --tells where to end --tells how to get to end
+// for (let i = 0; colors.length; i++){
+//     if (colors[i] === 'teal'){
+//         tealCount += 1;
+//         console.log('Teal was found')
+//     }
+// }
+// console.log('tealCount', tealCount);
+// // Example output
+// // green, red, teal, orange, teal
+// // Teal was found 2 times
 
 
-/**
- * #3 Even & Odd
- * -------------
- * 1. Create an array of numbers (at least 5 numbers)
- * 2. Create variables oddNumbers and evenNumbers (empty arrays)
- * 3. Write a loop that puts all the odd numbers in the oddNumbers 
- *    array and even numbers in the evenNumbers array.
- * 4. Output the original array, odd number array and even number array
- */
-let numbers = [3, 7, 2, 8, 11, 4, 2]
-let oddNumbers = [];
-let evenNumbers= [];
-console.log(numbers);
-console.log('The Even numbers are:',);
-for(var i=1; i<10; i+= 2){
-    console.log(i);
-}
-console.log('The Odd numbers are:',);
-for(var i=2; i<10; i+= 2){
-    console.log(i);
-}
+// /**
+//  * #3 Even & Odd
+//  * -------------
+//  * 1. Create an array of numbers (at least 5 numbers)
+//  * 2. Create variables oddNumbers and evenNumbers (empty arrays)
+//  * 3. Write a loop that puts all the odd numbers in the oddNumbers 
+//  *    array and even numbers in the evenNumbers array.
+//  * 4. Output the original array, odd number array and even number array
+//  */
+// let numbers = [3, 7, 2, 8, 11, 4, 2]
+// let oddNumbers = [];
+// let evenNumbers= [];
+// console.log(numbers);
+// console.log('The Even numbers are:',);
+// for(var i=1; i<10; i+= 2){
+//     console.log(i);
+// }
+// console.log('The Odd numbers are:',);
+// for(var i=2; i<10; i+= 2){
+//     console.log(i);
+// }
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
