@@ -9,9 +9,10 @@ console.log('Hello World');
  */
 let groupHobbies = ['swimming','board games','painting'];
 
-for (let i = 0; i < groupHobbies.length; i++){
+for (let i = 0; i < groupHobbies.length; i++) {
     console.log(groupHobbies[i]);
 }
+console.log('Total Hobbies:' , groupHobbies.length);
 
 // Example output
 // 1. swimming
