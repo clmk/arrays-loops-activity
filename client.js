@@ -70,7 +70,6 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 
-
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
@@ -88,6 +87,29 @@ console.log('Even' , evenNumbers);
  * 4. Output both arrays
  */
 
+let booleanArray = ['false', 'true', 'false', 'true', 'true'];
+let toggled = [];
+
+// for (let boolean of booleanArray) {
+//     if (boolean === true) {
+//         toggled.push(false);
+//     } else {
+//         toggled.push(true);
+//     }
+// }
+
+//* I'm not sure why I can not get the Else statement to flip the text. I tried two ways. My output only returns all 'true' //
+for (let i = 0; i < booleanArray.length; i++) {
+    if (booleanArray[i] === true) {
+        toggled.push(false);
+        }
+    else  {
+        toggled.push(true);
+    }
+        }
+
+console.log(booleanArray);
+console.log('Toggled' , toggled);
 
 // Example output
 // true, false, true, true
@@ -103,8 +125,17 @@ console.log('Even' , evenNumbers);
  *    NOTE: You should not need a second array here.
  * 3. Output the array
  */
+let numberArray = ['3' , '0' , '2' , '8' , '0' , '0' , '0'];
+let popped = numberArray.pop();
 
+console.log('Before' , numberArray);
 
+for (let i = 3 ; i < numberArray.length; i++) {
+    if (numberArray[i] == 0) {
+        numberArray.splice(i,2);
+    }
+}
+console.log('After' , numberArray);
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
